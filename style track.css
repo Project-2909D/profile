@@ -1,0 +1,15 @@
+.rail{position:absolute;left:0;right:0;bottom:0;height:190px}
+.rail::before{content:"";position:absolute;left:0;right:0;bottom:0;height:24px;background:repeating-linear-gradient(90deg,#4A3F36 0 20px,#3A322B 20px 21px,transparent 21px 40px) 0 0/100% 13px no-repeat,radial-gradient(circle,#A3AAAF 0 1.3px,transparent 1.6px) 0 0/7px 6px,radial-gradient(circle,#737A80 0 1.2px,transparent 1.5px) 3px 2px/9px 7px,radial-gradient(circle,#BCC1C5 0 1px,transparent 1.3px) 5px 4px/11px 8px,linear-gradient(#5E656B,#41474C)}
+.rail::after{content:"";position:absolute;left:0;right:0;bottom:24px;height:10px;background:repeating-linear-gradient(90deg,#2B3036 0 14px,transparent 14px 40px) 3px 7px/100% 3px no-repeat,linear-gradient(#E2E8EC 0 3px,#AEB8BF 3px 4px,#69747E 4px 7px,#48535D 7px 8px,#7C8791 8px 10px)}
+.station{position:absolute;right:0;top:0;bottom:0;width:calc(min(460px,92vw) + 48px);pointer-events:none}
+.station .roof{position:absolute;left:0;right:0;top:4px;height:8px;background:var(--ink);opacity:.85;border-radius:2px}
+.station .post{position:absolute;top:12px;bottom:calc(34px + min(460px,92vw)*.06);width:6px;background:var(--ink);opacity:.7}
+.station .post.l{left:4px}
+.station .post.r{right:4px}
+.station .sign{position:absolute;left:50%;top:13px;transform:translateX(-50%);background:#fff;border:2px solid #2A6BC4;border-bottom-width:5px;border-radius:4px;padding:1px 14px;color:#12202B}
+.station .sign .g{height:18px}
+.station .plat{position:absolute;left:0;right:0;bottom:0;height:calc(34px + min(460px,92vw)*.06);background:color-mix(in srgb,var(--ink) 18%,var(--navy));border-radius:4px 4px 0 0}
+.station .plat::before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:repeating-linear-gradient(90deg,#F2C230 0 14px,#C99A12 14px 18px)}
+.rail::before,.rail::after{display:none}
+.ballast{position:absolute;left:0;right:0;bottom:0;height:24px;background:radial-gradient(circle at 25% 35%,#B79C7E 0 1.6px,transparent 2.2px) 0 0/13px 9px,radial-gradient(circle at 70% 65%,#5B4531 0 2px,transparent 2.6px) 3px 2px/17px 11px,radial-gradient(circle at 50% 20%,#A4866A 0 1.4px,transparent 2px) 6px 4px/11px 8px,radial-gradient(circle at 80% 80%,#C4AA8C 0 1.2px,transparent 1.8px) 1px 5px/9px 7px,#84694E}
+.track{position:absolute;left:0;right:0;bottom:15px;height:20.5px;background:linear-gradient(#B9C3CB,#9AA6AF) 0 0/100% 3px no-repeat,linear-gradient(#8A6A55,#6F5342) 0 3px/100% 3px no-repeat,linear-gradient(#5E4A3D,#5E4A3D) 0 6px/100% 2px no-repeat,repeating-linear-gradient(90deg,#8E98A1 0 22px,transparent 22px 44px) 0 8px/100% 12.5px no-repeat}
